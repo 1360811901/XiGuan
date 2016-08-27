@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name = "com.fei.Entity.Comment" table = "comment">
+		<id name = "id" column = "id" type = "int">
+			<generator class = "increment" />
+		</id>
+		<property name = "dynamicId" column = "dynamicid" type = "string" />
+		<property name = "userName" column = "userName" type = "string" />
+		<property name = "cTime" column = "ctime" type = "string" />
+		<property name = "content" column = "content" type = "string" />
+	</class>
+</hibernate-mapping>

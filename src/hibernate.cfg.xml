@@ -1,0 +1,63 @@
+<!--
+  ~ Hibernate, Relational Persistence for Idiomatic Java
+  ~
+  ~ License: GNU Lesser General Public License (LGPL), version 2.1 or later.
+  ~ See the lgpl.txt file in the root directory or <http://www.gnu.org/licenses/lgpl-2.1.html>.
+  -->
+ <!DOCTYPE hibernate-configuration PUBLIC
+     "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+     "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+ 
+ <hibernate-configuration>
+    <session-factory>
+    	
+    	 <!-- SQL dialect -->
+        <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+    	
+        <!-- Database connection settings -->
+        <property name="connection.url">jdbc:mysql://localhost:3306/dongserver</property>
+        <property name="connection.username">root</property>
+        <property name="connection.password">123456</property>
+        <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+        
+        <!-- JDBC connection pool (c3p0) -->
+        <property name="hibernate.connection.provider_class">org.hibernate.c3p0.internal.C3P0ConnectionProvider</property>
+        <!-- connection pool max connections -->
+        <property name="hibernate.c3p0.max_size">10000</property>
+        <!-- connection pool min connections -->
+        <property name="hibernate.c3p0.min_size">1</property>
+        <!-- connection extra time -->
+        <property name="hibernate.c3p0.timeout">5000</property>
+        <!-- pool max catch PreparedStatement object-->
+        <property name="hibernate.c3p0.max_statements">100</property>
+        <property name="hibernate.c3p0.idle_test_period">3000</property>
+ 		<property name="hibernate.c3p0.acquire_increment">2</property>
+ 		
+ 		<!-- show sql format -->
+ 		<!-- <property name="format_sql">true</property> -->
+ 		<!-- show sql -->
+        <property name="show_sql">true</property>
+        
+        <!-- hibernate search -->
+        
+        <property name="hibernate.search.default.directory_provider">
+    		org.hibernate.search.store.impl.FSDirectoryProvider
+    	</property>
+    	<property name="hibernate.search.default.indexBase">
+    		C:\hibernatesearchindex
+    	</property>
+        
+         <!-- 添加hbm文件配置 -->
+        <mapping resource="com/fei/Entity/UserBaseInformation.hbm.xml" />
+        <mapping resource="com/fei/Entity/ContactsList.hbm.xml"/>
+        <mapping resource="com/fei/Entity/GroupBaseInformation.hbm.xml"/>
+        <mapping resource="com/fei/Entity/GroupMemberList.hbm.xml"/>
+        <mapping resource="com/fei/Entity/Comment.hbm.xml"/>
+        <mapping resource="com/fei/Entity/DynamicPhoto.hbm.xml"/>
+        <mapping resource="com/fei/Entity/FocusOn.hbm.xml"/>
+        <mapping resource="com/fei/Entity/UserDynamics.hbm.xml"/>
+        <mapping resource="com/fei/Entity/UserAlbum.hbm.xml"/>
+        <mapping resource="com/fei/Entity/Focus.hbm.xml"/>
+        
+    </session-factory>
+</hibernate-configuration>

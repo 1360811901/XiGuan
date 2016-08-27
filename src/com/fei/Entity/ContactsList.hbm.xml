@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name = "com.fei.Entity.ContactsList" table = "contactslist">
+		<id name = "id" column = "id" type = "int">
+			<generator class = "increment" />
+		</id>
+		<property name = "userName" column = "username" type = "string" />
+		<property name = "contact" column = "contact" type = "string" />
+		<property name = "classify" column = "classify" type = "string" />
+	</class>
+</hibernate-mapping>

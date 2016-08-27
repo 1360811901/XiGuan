@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FinalString>
+	<public>
+		<param-name></param-name>
+		<param-value></param-value>
+	</public>
+	<private>
+		<login>
+			<returncode>
+				<param-name></param-name>
+				<param-value></param-value>
+			</returncode>
+			<Receiveparams></Receiveparams>
+			<other></other>
+		</login>
+		<rongyun></rongyun>
+		<dynamic></dynamic>
+		<personInfo></personInfo>
+		<nearby></nearby>
+		<together></together>
+		<guide></guide>
+	</private>
+</FinalString>

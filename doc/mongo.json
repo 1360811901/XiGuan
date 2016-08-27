@@ -1,0 +1,5 @@
+post = {
+		"title" : "My Blog Post",
+		"content" : "Here is my blog post.",
+		"date" : new Date()
+		}

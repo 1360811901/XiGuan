@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name = "com.fei.Entity.UserDynamics" table = "user_dynamics">
+		<id name = "id" column = "id" type = "int">
+			<generator class = "increment" />
+		</id>
+		<property name = "userName" column = "username" type = "string" />
+		<property name = "dnId" column = "dnid" type = "string" />
+		<property name = "content" column = "content" type = "string" />
+		<property name = "uTime" column = "utime" type = "string" />
+		<property name = "longitude" column = "longitude" type = "string" />
+		<property name = "latitude" column = "latitude" type = "string" />
+		<property name = "province" column = "province" type = "string" />
+		<property name = "city" column = "city" type = "string" />
+		<property name = "clickOnLike" column = "clickonlike" type = "string" />
+		<property name = "commentNumber" column = "commentnumber" type = "string" />
+		<property name = "uType" column = "utype" type = "string" />
+		<property name = "destination" column = "destination" type = "string" />
+		<property name = "beginTime" column = "begintime" type = "string" />
+		<property name = "overTime" column = "overtime" type = "string" />
+	</class>
+</hibernate-mapping>

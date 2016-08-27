@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name = "com.fei.Entity.UserBaseInformation" table = "user_baseinformation">
+		<id name = "id" column = "id" type = "int">
+			<generator class = "increment" />
+		</id>
+		<property name = "userName" column = "username" type = "string" />
+		<property name = "passWord" column = "password" type = "string" />
+		<property name = "nickName" column = "nickname" type = "string" />
+		<property name = "sex" column = "sex" type = "string" />
+		<property name = "age" column = "age" type = "string" />
+		<property name = "career" column = "career" type = "string" />
+		<property name = "email" column = "email" type = "string" />
+		<property name = "headPortraitURL" column = "headportraiturl" type = "string" />
+		<property name = "longitude" column = "longitude" type = "string" />
+		<property name = "latitude" column = "latitude" type = "string" />
+		<property name = "province" column = "province" type = "string" />
+		<property name = "city" column = "city" type = "string" />
+		<property name = "rongToken" column = "rongtoken" type = "string" />
+		<property name = "vip" column = "vip" type = "string" />
+		<property name = "isWeiXin" column = "isweixin" type = "string" />
+		<property name = "isSina" column = "issina" type = "string" />
+		<property name = "signature" column = "signature" type = "string" />
+		<property name = "backphotoURL" column = "backphotourl" type = "string" />
+		<property name = "education" column = "education" type = "string" />
+		<property name = "hometown" column = "hometown" type = "string" />
+		<property name = "constellation" column = "constellation" type = "string" />
+		<property name = "label" column = "label" type = "string" />
+	</class>
+</hibernate-mapping>

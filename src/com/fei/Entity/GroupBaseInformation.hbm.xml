@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name = "com.fei.Entity.GroupBaseInformation" table = "group_baseinformation">
+		<id name = "id" column = "id" type = "int">
+			<generator class = "increment" />
+		</id>
+		<property name = "groupId" column = "groupid" type = "string" />
+		<property name = "groupCount" column = "groupcount" type = "string" />
+		<property name = "groupOwn" column = "groupown" type = "string" />
+		<property name = "groupSummary" column = "groupsummary" type = "string" />
+		<property name = "groupHeadPortraitURL" column = "groupheadportraiturl" type = "string" />
+		<property name = "groupName" column = "groupname" type = "string" />
+	</class>
+</hibernate-mapping>
